@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 40px;
+  padding: 20px;
+  color: white;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background: #F8F8F8;
+  color: #333333;
+}
+
+html, body, p, th, td, li, dd, dt {
+  font: 1em 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; font-weight: 100; margin-bottom: 10px; color: #696969;}
+h3 { font-size: 1.2em ; margin: 0px;}
+h4 { font-size: 1.0em; }
+h5 { font-size: 0.9em; }
+h6 { font-size: 0.8em; }
+a:link { color: #00f; }
+a:visited { color: #009; }
+a:hover { color: #06f; }
+a:active { color: #0cf; }
+
+/*:focus {
+  outline: none;
+}*/
+
+textarea {
+  display: block;
+  width: 780px;
+  height: 500px;
+  padding: 40px;
+  margin: 40px auto 40px auto;
+  font-size: 1.2em;
+  resize: none;
+  border-color: #E1E1E1;
+  border-radius: 2px;
+
+  autofocus: "true";
+  outline: "none";
+}
