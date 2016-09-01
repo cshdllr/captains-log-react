@@ -50,7 +50,5 @@ textarea {
   resize: none;
   border-color: #E1E1E1;
   border-radius: 2px;
-
-  autofocus: "true";
-  outline: "none";
+  outline: none;
 }
