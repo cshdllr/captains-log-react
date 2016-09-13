@@ -2,9 +2,24 @@ import React from 'react';
 
 class LogTextArea extends React.Component {
 
-  preventBackspace(event) {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // This is causing some problems. need to figure out setting default state
+      // visibility: hidden
+    };
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+  }
+
+  handleKeyPress(event) {
     if (event.which === 8) {
       event.preventDefault();
+      this.setState({
+
+      });
+      console.log("testing")
+    } else if (event.which === 74) {
+      console.log("j was pressed")
     }
   }
 
@@ -16,10 +31,18 @@ class LogTextArea extends React.Component {
     ];
     var prompt = prompts[Math.floor(Math.random()*prompts.length)];
 
-    return <textarea
-      autofocus="true"
-      onKeyDown={this.preventBackspace}
-      placeholder={prompt}></textarea>;
+    console.log(this.state.color);
+    return (
+      <div>
+        <div id="warningMessage" style={{visibility: this.state.visibility}}>
+          Hello
+        </div>
+        <textarea
+          onKeyDown={this.handleKeyPress}
+          placeholder={prompt}>
+        </textarea>
+      </div>
+    );
   }
 }
 

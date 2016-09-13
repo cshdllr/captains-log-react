@@ -28,7 +28,7 @@ class CurrentDate extends React.Component {
     }
 
     var suffix = ordinal(dd);
-    dd = dd + suffix;
+    dd += suffix;
 
     return <h2>{day + ", " + month + " " + dd}</h2>;
   }

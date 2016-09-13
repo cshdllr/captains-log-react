@@ -40,6 +40,13 @@ a:active { color: #0cf; }
   outline: none;
 }*/
 
+#warningMessage {
+  width: 400px;
+  background: red;
+  margin: 20px auto 20px auto;
+  border-radius: 4px;
+}
+
 textarea {
   display: block;
   width: 780px;
@@ -49,6 +56,6 @@ textarea {
   font-size: 1.2em;
   resize: none;
   border-color: #E1E1E1;
-  border-radius: 2px;
+  border-radius: 6px;
   outline: none;
 }

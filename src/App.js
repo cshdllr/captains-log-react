@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import FacebookLogin from 'react-facebook-login';
 import LogTextArea from './LogTextArea';
 import CurrentDate from './CurrentDate';
+
+import FacebookLogin from 'react-facebook-login';
 
 const responseFacebook = (response) => {
 
@@ -32,7 +33,6 @@ class App extends Component {
           autoLoad={false} // cookie. change to true after development
           fields="name,email,picture"
           callback={responseFacebook} />
-
       </div>
     );
   }
